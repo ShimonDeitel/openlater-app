@@ -1,0 +1,9 @@
+Openlater is a time capsule for your own words. Write a letter, pick a future "open when..." date - a birthday, an anniversary, or any day worth waiting for - and seal it shut with a literal wax seal.
+
+The lock is real. Openlater checks every capsule's unlock date against today whenever you open the app, so a capsule stays sealed for every moment before its date and becomes readable the instant that day arrives - there is no way to peek early, not even for you. When the day comes, watch the wax seal actually crack and break open before your letter is revealed.
+
+The free tier holds up to 3 sealed capsules, text only. Openlater Pro is an auto-renewing monthly subscription that unlocks unlimited capsules, photo capsules, voice-memo capsules you record yourself, and recurring capsules - seal a birthday letter once and it re-seals itself automatically for next year, every year.
+
+Everything lives only on your device. Letters, photos, and voice recordings are stored locally and are never uploaded, synced, or sent anywhere - there is no account, no server, and no internet connection required.
+
+A keepsake for the letters you want to send to the future.

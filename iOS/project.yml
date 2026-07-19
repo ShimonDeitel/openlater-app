@@ -1,0 +1,62 @@
+name: Openlater
+options:
+  bundleIdPrefix: com.shimondeitel
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: "W7Q885Q59C"
+    CODE_SIGN_STYLE: Automatic
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: "YES"
+targets:
+  Openlater:
+    type: application
+    platform: iOS
+    sources:
+      - path: Openlater
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shimondeitel.openlater
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_FILE: Openlater/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Openlater/Openlater.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: "YES"
+        GENERATE_INFOPLIST_FILE: "NO"
+  OpenlaterTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: OpenlaterTests
+      - path: Openlater.storekit
+    dependencies:
+      - target: Openlater
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shimondeitel.openlater.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+        TARGETED_DEVICE_FAMILY: "1"
+schemes:
+  Openlater:
+    build:
+      targets:
+        Openlater: all
+        OpenlaterTests: [test]
+    run:
+      config: Debug
+      storeKitConfiguration: Openlater.storekit
+    test:
+      config: Debug
+      storeKitConfiguration: Openlater.storekit
+      targets:
+        - OpenlaterTests
+    archive:
+      config: Release

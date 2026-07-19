@@ -1,0 +1,53 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "OPENLATER_STOREKIT_CONFIG",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_storeKitErrors" : []
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "23100002",
+      "localizations" : [],
+      "name" : "Openlater Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "3.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "openlater_pro_monthly_id",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited capsules, photo and voice-memo letters, and recurring capsules that re-seal themselves.",
+              "displayName" : "Openlater Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.shimondeitel.openlater.pro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Openlater Pro Monthly",
+          "subscriptionGroupID" : "23100002",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
